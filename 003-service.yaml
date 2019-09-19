@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: workshop2-svc
-  namespace: workshop2
+  name: workshop02-svc
+  namespace: workshop02
 spec:
   selector:
-    deploymentconfig: workshop2-dc
+    deploymentconfig: workshop02-dc
   ports:
     - name: nodejs
       protocol: TCP

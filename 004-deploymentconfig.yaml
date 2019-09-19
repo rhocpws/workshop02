@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: DeploymentConfig
 metadata:
-  name: workshop2-dc
-  namespace: workshop2
+  name: workshop02-dc
+  namespace: workshop02
 spec:
   replicas: 2
   selector:
-    deploymentconfig: workshop2-dc
+    deploymentconfig: workshop02-dc
   strategy:
     type: Recreate
   triggers:
@@ -17,18 +17,18 @@ spec:
         - workshop2
         from:
           kind: ImageStreamTag
-          name: workshop2:latest
+          name: workshop02:latest
       type: ImageChange
   template:
     metadata:
       labels:
-        deploymentconfig: workshop2-dc
-        name: workshop2
+        deploymentconfig: workshop02-dc
+        name: workshop02
     spec:
       containers:
-        - image: workshop2
+        - image: workshop02
           imagePullPolicy: Always
-          name: workshop2
+          name: workshop02
           ports:
             - containerPort: 8080
               name: nodejs

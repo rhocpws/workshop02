@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Route
 metadata:
-  name: workshop2-route
-  namespace: workshop2
+  name: workshop02-route
+  namespace: workshop02
 spec:
   host: workshop2.apps.rh.ocp.guru
   to:
     kind: Service
-    name: workshop2-svc
+    name: workshop02-svc
