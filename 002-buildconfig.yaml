@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: BuildConfig
 metadata:
-  name: workshop02-bc
+  name: workshop02
     namespace: workshop02
 spec:
   output:

@@ -4,7 +4,7 @@ metadata:
   name: workshop02-dc
   namespace: workshop02
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     deploymentconfig: workshop02-dc
   strategy:
@@ -14,7 +14,7 @@ spec:
     - imageChangeParams:
         automatic: true
         containerNames:
-        - workshop2
+        - workshop02
         from:
           kind: ImageStreamTag
           name: workshop02:latest

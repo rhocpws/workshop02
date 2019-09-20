@@ -4,7 +4,6 @@ metadata:
   name: workshop02-route
   namespace: workshop02
 spec:
-  host: workshop2.apps.rh.ocp.guru
   to:
     kind: Service
     name: workshop02-svc
