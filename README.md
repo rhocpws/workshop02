@@ -46,4 +46,4 @@ oc get pods -n workshop02
 
 # get the route, copy/paste it to your web browser
 oc get routes -n workshop02
-``
+```
